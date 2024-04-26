@@ -11,4 +11,13 @@ public class Aritmetica {
         System.out.println("Resultado :" + resultado);
     }//Modificador de acceso
 
+    public int sumarConRetorno(){ //Metodo con retorno
+        return a + b;
+    }
+
+    public int sumarConArgumentos(int arg1, int arg2){
+        this.a = arg1; //el a de esta y sSOLO esta clase
+        this.b = arg2;
+        return sumarConRetorno();  //return a + b;
+    }
 }
