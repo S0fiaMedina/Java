@@ -5,9 +5,22 @@ public class Aritmetica {
     int a; //como es un tipo primitivo, su valor x default es 0
     int b;
 
+    //construuctor vacio
+    public Aritmetica(){
+        System.out.println("Ejecutando constructor");
+    }
+    // Sobrecarga de constructores
+    public Aritmetica(int a, int b){
+        this.a = a; //El atributo de la clase = el parametro del metodo
+        this.b = b;
+        System.out.println("Ejecutando con argumentos");
+
+
+    }
+
     //Metodos
     public void sumar(){
-        int resultado = a +  b;
+        int resultado = this.a +  this.b;
         System.out.println("Resultado :" + resultado);
     }//Modificador de acceso
 
@@ -20,4 +33,7 @@ public class Aritmetica {
         this.b = arg2;
         return sumarConRetorno();  //return a + b;
     }
+
+    //Variables locales
+
 }
