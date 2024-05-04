@@ -5,9 +5,17 @@ public class Empleado extends Persona {
    private double sueldo;
    private static int contadorEmpleado;
 
+   //Constructor vacio (sobrecarga de constructores   )
+   public Empleado(){
+      // super() --> Llamada implicita al constructor padre
+      this.idEmpleado = Empleado.contadorEmpleado++;
+   }
+
    //Constructor
    public Empleado(String nombre, double sueldo){
-      super(nombre); // Se selecciona el constructor con un solo argumento - Aqui se inicializa el nombre de Persona
+      // super(nombre); // Se selecciona el constructor con un solo argumento - Aqui se inicializa el nombre de Persona
+      this(); // Llamada al constructor vacio
+      this.nombre = nombre;
       this.sueldo = sueldo;
       this.idEmpleado = Empleado.contadorEmpleado++;
    }
