@@ -1,4 +1,4 @@
-package Programacion.ConversionObjetos;
+package Programacion.ClaseObject;
 
 public class Escritor  extends Empleado{
     

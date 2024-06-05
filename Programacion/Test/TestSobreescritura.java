@@ -7,9 +7,6 @@ public class TestSobreescritura {
         Gerente gerente1 = new Gerente("Juan", 5000, "Sistemas");
         System.out.println(gerente1.obtenerDetalles());
 
-
-        
-
         // variable de la clase padre
         Empleado empleado = new Empleado("Karla", 5000);
         imprimir(empleado);
