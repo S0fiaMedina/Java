@@ -4,14 +4,14 @@ import java.util.*;
 
 public class TestCollections {
     public static void main(String[] args) {
-        List miLista = new ArrayList(); // uso de listas
+        List<String> miLista = new ArrayList(); // uso de listas (notacion de diamante)
         miLista.add("Lunes");
         miLista.add("Martes");
         miLista.add("Miercoles");
         miLista.add("Jueves");
         miLista.add("Viernes");
         
-        Set miSet = new HashSet();
+        Set<String> miSet = new HashSet();
 
         miSet.add("Lunes");
         miSet.add("Martes");
@@ -38,7 +38,7 @@ public class TestCollections {
 
     }
 
-    public static void imprimir(Collection collection){ // recibe el tipo mas generico: la interfaz padre
+    public static void imprimir(Collection<String> collection){ // recibe el tipo mas generico: la interfaz padre
         collection.forEach(
             element -> {// para cada elemento que pertenezca a la interfaz collectiosn
                 System.out.println("Elemento : " + element);
